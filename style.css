@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fe;
+    margin: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2b59e2; /* Matching the blue in your screenshot */
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.logout-btn {
+    background-color: #1a3fb3;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container & Layout */
+.container {
+    padding: 40px 50px;
+}
+
+.small-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards with Hover Effects */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* This makes the movement smooth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    /* Moves the card 5 pixels up */
+    transform: translateY(-5px); 
+    /* Makes the shadow more prominent when lifted */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    cursor: default; 
+}
+
+/* Form Styling */
+.booking-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.booking-form input, 
+.booking-form select, 
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    font-family: inherit;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: #2b59e2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1a3fb3;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #2b59e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1a3fb3;
+}
+
+.btn-cancel {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* PHP Message Alerts */
+.msg {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
